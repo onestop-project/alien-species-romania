@@ -1,8 +1,8 @@
-# Checklist of Alien Species in Romania
+# Checklist of Introduced Taxa in Romania
 
 ## Rationale
 
-This repository contains the functionality to standardize the data of the Checklist of Introduced Marine Species in Portugal to a [Darwin Core Archive](https://www.gbif.org/darwin-core) that can be harvested by [GBIF](https://www.gbif.org/).
+This repository contains the functionality to standardize the data of the Checklist of Introduced Taxa in Romania to a [Darwin Core Archive](https://www.gbif.org/darwin-core) that can be harvested by [GBIF](https://www.gbif.org/).
 
 ## Workflow
 
