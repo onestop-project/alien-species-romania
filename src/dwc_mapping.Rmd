@@ -48,11 +48,23 @@ library(rgbif)          # To use GBIF services
 The data is maintained in [this Google Spreadsheet](https://docs.google.com/spreadsheets/d/1RbXVrrqZmM3agdkEJgkJJL-wAJwd8U-CjJPKsqahZOI/edit?gid=818849950#gid=818849950).
 
 Read the relevant worksheet (published as csv):
-Preview data:
+
+```{r read_source_data}
+raw_data <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vQTOIBGFbyhkhpLLzwryEvJ2NcR5C4-__iQwzw6NncQTQXSwDuHPfL_t43OMUTmEYBY7HnhaidG4K0J/pub?gid=818849950&single=true&output=csv", show_col_types = FALSE)
+```
+
+Copy the source data to the repository to keep track of changes:
 
 ```{r}
-raw_data %>% head(n = 5)
+write_csv(raw_data, here("data", "raw", "raw_data_dump.csv"), na = "")
 ```
+
+Preview data: 
+
+```{r}
+raw_data %>% head()
+```
+
 
 Clean data somewhat:
 
